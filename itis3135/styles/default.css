@@ -1,4 +1,50 @@
+img {
+    width: 60%;
+    max-width: 250px;
+    display: block;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.center-page {
+    box-sizing: border-box;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.automargintext {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figcaption {
+    font-style: italic;
+}
+
 body {
-    background-color: red;
-    color: blue;
+    width: 100%;
+    max-width: 600px;
+    font-family: Georgia, Arial;
+    background-color: rgb(241, 145, 19);
+    color: rgb(69, 58, 0);
+}
+
+.indent {
+    margin-left: 7%;
+    margin-right:7%;
+}
+
+.indent-right {
+    margin-right:7%;
+}
+
+a {
+    color: rgb(164, 4, 52);
 }
