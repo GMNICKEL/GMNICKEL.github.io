@@ -8,6 +8,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    list-style-position: inside;
 }
 
 .center-page {
@@ -47,4 +48,8 @@ body {
 
 a {
     color: rgb(164, 4, 52);
+}
+
+hr {
+    border-color: rgb(69, 58, 0);
 }
