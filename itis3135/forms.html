@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/default.css">
+    <title>Grayson Nickel Ghastly Newt || ITIS 3135 Form</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="center-page">
+    <header class="center">
+        <div data-include="components/header.html"></div>
+    </header>
+
+    <main class="center">
+        <h2>Grip Nerds Business Form</h2>
+        <p>Please fill out this form if you or your company are interested in sourcing racing tires from us.</p>
+        <form action="#">
+            <hr>
+        <label class="bold-label">Name </label><input type="text" id="name" name="name" placeholder="John Doe" required><br>
+        <label class="bold-label">Phone Number </label><input type="tel" id="phone" name="phone" placeholder="EX: 123-4567-8901"
+            required size="15"><br>
+        <label class="bold-label">Email </label><input type="email" id="email" name="email" placeholder="johndoe@email.com"
+            required><br><br>
+        <label class="bold-label">What do you need our tires for?</label><br>
+        <label>Private Use </label><input type="radio" id="usecase" name="usecase" value="private"
+            required><br><label>Commercial Use </label>
+        <input type="radio" id="usecase" name="usecase" value="public" required><br><br>
+        <label class="bold-label">Check all that apply:</label><br>
+        <label>You are associated with an F1 racing team</label><input type="checkbox" id="f1" name="f1" value="f1"><br>
+        <label>You are associated with a tire distribution business</label><input type="checkbox" id="seller"
+            name="seller" value="seller"><br><br>
+        <label class="bold-label">Country </label><select id="country" name="country" required>
+            <option value="USA">USA</option>
+            <option value="Canada">Canada</option>
+            <option value="UK">UK</option>
+            <option value="Australia">Australia</option>
+            <option value="N/A">N/A</option>
+        </select><br>
+        <label class="tiny">If your country is not on the list then we cannot ship to you.</label><br><br>
+        <input type="reset" value="Reset" class="btn">
+    <input type="submit" value="Submit" class="btn">
+
+        <hr>
+        </form>
+    </main>
+
+    <footer class="center">
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+
+</html>

@@ -39,11 +39,11 @@ body {
 
 .indent {
     margin-left: 7%;
-    margin-right:7%;
+    margin-right: 7%;
 }
 
 .indent-right {
-    margin-right:7%;
+    margin-right: 7%;
 }
 
 a {
@@ -53,3 +53,80 @@ a {
 hr {
     border-color: rgb(69, 58, 0);
 }
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+ol {
+    margin-left: -50px;
+}
+
+.push-left {
+    margin-left: -50px;
+}
+
+th {
+    background-color: #965204;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #dedddd;
+}
+
+tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+tfoot th {
+    text-align: right;
+}
+
+figure {
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  caption {
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+
+  .tiny {
+    font-size: 10px;
+  }
+
+  .btn {
+    background-color: rgb(105, 7, 0);
+    color: white;
+  }
+
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f4c991;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .bold-label {
+    font-weight: bold;
+  }
+
+
+
