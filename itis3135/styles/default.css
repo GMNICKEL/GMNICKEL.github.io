@@ -19,7 +19,7 @@ html,body {
 /*override for tablets*/
 @media screen and (min-width: 601px) and (max-width: 980px) {
     table {
-        font-size: 12px;
+        font-size: 14px;
     }
 }
 
@@ -28,6 +28,11 @@ html,body {
     table {
         font-size: 12px;
     }
+}
+
+.table-container {
+    overflow-x: auto;
+    width: 100%;
 }
 
 .padingLR {
@@ -98,7 +103,6 @@ table {
     max-width: 1200px;
     margin: 0 auto;
     border-collapse: collapse;
-    overflow-x: auto;
 }
 
 th,
