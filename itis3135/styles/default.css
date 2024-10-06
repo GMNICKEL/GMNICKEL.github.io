@@ -18,12 +18,16 @@ html,body {
 
 /*override for tablets*/
 @media screen and (min-width: 601px) and (max-width: 980px) {
-
+    table {
+        font-size: 12px;
+    }
 }
 
 /*override mobile devices*/
 @media screen and (min-width: 370px) and (max-width: 600px) {
-
+    table {
+        font-size: 12px;
+    }
 }
 
 .padingLR {
@@ -89,10 +93,12 @@ hr {
 
 table {
     width: 90%;
+    max-width: 90%;
     border-collapse: collapse;
     max-width: 1200px;
     margin: 0 auto;
     border-collapse: collapse;
+    overflow-x: auto;
 }
 
 th,
