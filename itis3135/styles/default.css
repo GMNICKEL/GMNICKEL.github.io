@@ -204,7 +204,7 @@ figure {
     max-width: 350px;
     height: auto; /* Maintain aspect ratio */
     margin-bottom: 30px; /* Add vertical space between each block */
-    padding-left: 6%; /*add some space between img and left edge of screen*/
+    margin-left: 6%; /*add some space between img and left edge of screen*/
 }
 
 .text-container {
