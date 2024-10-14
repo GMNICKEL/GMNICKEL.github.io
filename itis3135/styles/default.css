@@ -171,5 +171,62 @@ figure {
     font-weight: bold;
   }
 
+  .grey-background {
+    background-color: rgb(208, 208, 208);
+  }
+
+  /* Client Project ONLY */
+  .client-page-center {
+    box-sizing: border-box;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+  }
+
+  .padding5 {
+    padding: 5px;
+  }
+
+  .width80 {
+    width: 80%;
+  }
+
+  /* Projects.html Containers || I hate flex containers oh my god*/
+  .flex-container {
+    display: flex;
+    align-items: flex-start; /* Align at the top */
+    gap: 2vw; /* Add gap relative to viewport width */
+}
+
+.flex-container img {
+    width: 40vw; /* Use viewport-relative width */
+    max-width: 350px;
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 30px; /* Add vertical space between each block */
+    padding-left: 2.5vw; /*add some space between img and left edge of screen*/
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw; /* Space between the <p> elements relative to viewport width */
+}
+
+.text-container p {
+    margin: 0; /* Remove default margin */
+    font-size: clamp(7px, 3.2vw, 24px); /* Min: 14px, Preferred: 1.5vw, Max: 24px */
+}
+
+.client-project-img {
+    display: flex;
+    align-items: flex-start;
+    width: 80vw;
+    max-width: 600px;
+    height: auto;
+}
+
+
+
 
 

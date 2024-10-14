@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/default.css">
+    <title>Client Project 1 || Projects Page</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="client-page-center">
+    <header class="center">
+        <div data-include="../../components/client_project_header.html"></div>
+    </header>
+
+    <main class="center">
+        <h2>Projects</h2>
+        <section class="flex-container">
+            <a href="rally.html"><img src="../../images/rally.jpg"></a>
+            <div class="text-container">
+                <p><strong><a href="rally.html">Rally Pickleball</a></strong></p>
+                <p>This urban pickleball and entertainment facility is the first of its kind in Charlotte, located at 101 Southside Drive in Charlotte. Rally combines the popularity of pickleball with drinks and food in an elevated social environment.</p>
+            </div>
+        </section>
+        <section class="flex-container">
+            <a href="lintmens.html"><img src="../../images/lintmens.jpg"></a>
+            <div class="text-container">
+                <p><strong><a href="lintmens.html">Lintmens</a></strong></p>
+                <p>This planned campus was inspired by the close-knit mill village where it originated. The developers at The Pamaka Group sought to build a community meeting place centered around creating, sharing, eating and having fun.</p>
+            </div>
+        </section>
+        <section class="flex-container">
+            <a href="el_thrifty.html"><img src="../../images/elthrifty.jpg"></a>
+            <div class="text-container">
+                <p><strong><a href="el_thrifty.html">El Thrifty Social Club</a></strong></p>
+                <p>This project was to build a social club in the 7,500sf basement of Optimist Hall. The club provides a unique atmosphere to relax in Charlotte. The challenge was to build a unique Southwestern theme in an old textile mill.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="center">
+        <div data-include="../../components/client_project_footer.html"></div>
+    </footer>
+    
+    <script> // hover zoom function
+        const images = document.querySelectorAll('.flex-container img');
+    
+        images.forEach((img) => {
+          img.addEventListener('mouseover', () => {
+            img.style.transform = 'scale(1.1)'; // zoom
+          });
+    
+          img.addEventListener('mouseout', () => {
+            img.style.transform = 'scale(1)'; // unzoom
+          });
+        });
+    </script>
+    
+    <script src="../../scripts/HTMLInclude.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/default.css">
+    <title>Client Project 1 || Contact Form</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="client-page-center">
+    <header class="center">
+        <div data-include="../../components/client_project_header.html"></div>
+    </header>
+
+    <main class="center">
+        <section class="contact-form-section">
+            <h2>Contact Page</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name (First & Last)</label><br>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="company">Company</label><br>
+                    <input type="text" id="company" name="company" required>
+                </div>
+                <div class="form-group">
+                    <label for="proposal">Please explain in detail your proposal:</label><br>
+                    <textarea id="proposal" name="proposal" rows="4" required minlength="50"></textarea>
+                </div>
+                <div class="form-group submit-container">
+                    <button type="submit" class=".submit-button">Submit</button>
+                </div>
+            </form>
+        </section>
+        <br>
+        
+    </main>
+
+    <footer class="center">
+        <div data-include="../../components/client_project_footer.html"></div>
+    </footer>
+    <script src="../../scripts/HTMLInclude.min.js"></script>
+</body>
+
+</html>
