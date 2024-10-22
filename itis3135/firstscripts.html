@@ -57,8 +57,8 @@
 
         <!--You are NOT-->
         <form id="self-desc-form">
-            <label for="selfDesc">Describe yourself in one word:</label>
-            <input type="text" id="selfDesc" name="selfDesc" required>
+            <label for="self-desc">Describe yourself in one word:</label>
+            <input type="text" id="self-desc" name="self-desc" required>
             <button type="submit">Submit</button>
         </form>
         <p id="self-desc-output"></p>
@@ -138,7 +138,7 @@
         //You are NOT
         document.getElementById('self-desc-form').addEventListener('submit', function (event) {
             event.preventDefault();
-            const selfDesc = document.getElementById('selfDesc').value;
+            const selfDesc = document.getElementById('self-desc').value;
             document.getElementById('self-desc-output').innerText = `You are NOT ${selfDesc}!`;
         });
     </script>
