@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/default.css">
+    <title>Grayson Nickel Ghastly Newt || ITIS 3135 First Scripts</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="center-page">
+    <header class="center">
+        <div data-include="components/header.html"></div>
+    </header>
+
+    <main class="center">
+        <h2>My First Scripts</h2>
+        <!--Date-->
+        <p id="date"></p>
+
+        <!--Form-->
+        <form id="userForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="feeling">How are you feeling?:</label>
+            <input type="text" id="feeling" name="feeling" required><br>
+            <label for="number">Favorite Number (0-10):</label>
+            <input type="number" id="number" name="number" required><br>
+            <button type="submit">Submit</button>
+        </form>
+        <p id="output"></p>
+        <p id="polygonOutput"></p>
+
+        <!--Sum-->
+        <form id="sumForm">
+            <p>Sum Calculator:</p>
+            <label for="num1">Enter first number:</label>
+            <input type="number" id="num1" name="num1" required><br>
+            <label for="num2">Enter second number:</label>
+            <input type="number" id="num2" name="num2" required><br>
+            <button type="submit">Add Numbers</button>
+        </form>
+        <p id="sumOutput"></p>
+
+        <!--Tax-->
+        <form id="taxForm">
+            <label for="taxInput">Enter amount to calculate tax:</label>
+            <input type="number" id="taxInput" name="taxInput" required>
+            <button type="submit">Calculate Tax</button>
+        </form>
+        <p id="taxOutput"></p>
+
+        <!--Do Not Click-->
+        <button id="doNotClick">Do Not Click</button>
+        <p id="clickOutput"></p>
+
+        <!--You are NOT-->
+        <form id="selfDescForm">
+            <label for="selfDesc">Describe yourself in one word:</label>
+            <input type="text" id="selfDesc" name="selfDesc" required>
+            <button type="submit">Submit</button>
+        </form>
+        <p id="selfDescOutput"></p>
+
+
+
+    </main>
+
+    <footer class="center">
+        <div data-include="components/footer.html"></div>
+    </footer>
+
+    <!--Get Date-->
+    <script>
+        document.getElementById("date").innerHTML = "Date : " + Date();
+    </script>
+
+    <!--Survey & Output-->
+    <script>
+        //Name & Feeling
+        document.getElementById('userForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const feeling = document.getElementById('feeling').value;
+            const number = document.getElementById('number').value;
+            document.getElementById('output').innerText =
+                `The Grip Nerds inc. welcomes you, ${name}!
+    We're glad you are doing ${feeling}!`;
+
+            //Polygons
+            const polygonNames = {
+                1: 'Monogon',
+                2: 'Digon (or bigon)',
+                3: 'Triangle',
+                4: 'Quadrilateral',
+                5: 'Pentagon',
+                6: 'Hexagon',
+                7: 'Heptagon',
+                8: 'Octagon',
+                9: 'Nonagon',
+                10: 'Decagon'
+            };
+            let favoriteNumber = Math.abs(Math.round(number));
+            if (favoriteNumber in polygonNames) {
+                document.getElementById('polygonOutput').innerText =
+                    `A polygon with ${favoriteNumber} sides is called a ${polygonNames[favoriteNumber]}.`;
+            } else {
+                document.getElementById('polygonOutput').innerText =
+                    `No polygon name available for ${favoriteNumber} sides.`;
+            }
+        });
+
+        //4 tasks of my choice: 
+
+        //Sum
+        document.getElementById('sumForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            const num1 = parseFloat(document.getElementById('num1').value);
+            const num2 = parseFloat(document.getElementById('num2').value);
+            const sum = num1 + num2;
+            document.getElementById('sumOutput').innerText = `The sum is: ${sum}`;
+        });
+
+        //Tax Calculator 7%
+        document.getElementById('taxForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            const amount = parseFloat(document.getElementById('taxInput').value);
+            const tax = amount * 0.07;
+            document.getElementById('taxOutput').innerText = `The tax is: ${tax}`;
+        });
+
+        //Do Not Click
+        document.getElementById('doNotClick').addEventListener('click', function () {
+            document.getElementById('clickOutput').innerText = "You are very poor at following instructions!";
+        });
+
+        //You are NOT
+        document.getElementById('selfDescForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            const selfDesc = document.getElementById('selfDesc').value;
+            document.getElementById('selfDescOutput').innerText = `You are NOT ${selfDesc}!`;
+        });
+    </script>
+
+    <!--Validator-->
+    <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+
+</html>
