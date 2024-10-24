@@ -41,9 +41,9 @@ function addCourse() {
 
 function displayFormData() {
     const formDataContainer = document.createElement('div');
-    formDataContainer.className = 'byo'; // Add the CSS class here
+    formDataContainer.className = 'byo';
     const imageInput = document.getElementById('image');
-    const imageUrl = URL.createObjectURL(imageInput.files[0]); // Get the uploaded image URL
+    const imageUrl = URL.createObjectURL(imageInput.files[0]);
 
     formDataContainer.innerHTML = `
         <h2>Your Introduction Page</h2>
@@ -64,33 +64,24 @@ function displayFormData() {
         <p><strong>Anything Else:</strong> ${document.getElementById('additional-info').value}</p>
     `;
 
-    // Clear the form
     document.body.innerHTML = '';
     document.body.appendChild(formDataContainer);
 
-    // Add reset link
     const resetLink = document.createElement('button');
     resetLink.textContent = 'Reset';
     resetLink.onclick = function() {
-        location.reload(); // Reloads the page to reset everything
+        location.reload();
     };
     document.body.appendChild(resetLink);
 }
 
-// Event listeners
 document.getElementById('intro-form').addEventListener('submit', function (event) {
-    event.preventDefault(); // Prevent the form from submitting
-
-    // Validate required fields
+    event.preventDefault();
     if (!validateForm()) {
         alert('Please fill in all required fields.');
         return;
     }
-
-    // Gather form data and display it
     displayFormData();
-
-    // Clear the form
     this.reset();
 });
 
