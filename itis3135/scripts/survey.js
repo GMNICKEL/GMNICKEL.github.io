@@ -1,28 +1,16 @@
-document.getElementById('intro-form').addEventListener('submit', function (event) {
-    event.preventDefault();
-
-    if (!validateForm()) {
-        alert('Please fill in all required fields.');
-        return;
-    }
-
-    displayFormData();
-    this.reset();
-});
-
 function validateForm() {
     const requiredFields = [
-        'name',
-        'mascot',
-        'image',
-        'image-caption',
-        'personal-background',
-        'professional-background',
-        'academic-background',
-        'web-development',
+        'name', 
+        'mascot', 
+        'image', 
+        'image-caption', 
+        'personal-background', 
+        'professional-background', 
+        'academic-background', 
+        'web-development', 
         'computer-platform'
     ];
-
+    
     for (const field of requiredFields) {
         const input = document.getElementById(field);
         if (!input.value) {
@@ -42,7 +30,7 @@ function addCourse() {
     const deleteButton = document.createElement('button');
     deleteButton.textContent = 'Delete';
     deleteButton.type = 'button';
-    deleteButton.onclick = function () {
+    deleteButton.onclick = function() {
         courseContainer.removeChild(newCourseInput);
         courseContainer.removeChild(deleteButton);
     };
@@ -53,16 +41,15 @@ function addCourse() {
 
 function displayFormData() {
     const formDataContainer = document.createElement('div');
-    formDataContainer.className = 'byo';
-
+    formDataContainer.className = 'byo'; // Add the CSS class here
     const imageInput = document.getElementById('image');
-    const imageUrl = URL.createObjectURL(imageInput.files[0]);
+    const imageUrl = URL.createObjectURL(imageInput.files[0]); // Get the uploaded image URL
 
     formDataContainer.innerHTML = `
         <h2>Your Introduction Page</h2>
         <p><strong>Name:</strong> ${document.getElementById('name').value}</p>
         <p><strong>Mascot:</strong> ${document.getElementById('mascot').value}</p>
-        <img src="${imageUrl}" alt="${document.getElementById('image-caption').value}" style="max-width: 300px; height: auto;">
+        <img src="${imageUrl}" alt="${document.getElementById('image-caption').value}">
         <p><strong>Image Caption:</strong> ${document.getElementById('image-caption').value}</p>
         <p><strong>Personal Background:</strong> ${document.getElementById('personal-background').value}</p>
         <p><strong>Professional Background:</strong> ${document.getElementById('professional-background').value}</p>
@@ -77,13 +64,34 @@ function displayFormData() {
         <p><strong>Anything Else:</strong> ${document.getElementById('additional-info').value}</p>
     `;
 
+    // Clear the form
     document.body.innerHTML = '';
     document.body.appendChild(formDataContainer);
 
+    // Add reset link
     const resetLink = document.createElement('button');
     resetLink.textContent = 'Reset';
-    resetLink.onclick = function () {
-        location.reload();
+    resetLink.onclick = function() {
+        location.reload(); // Reloads the page to reset everything
     };
     document.body.appendChild(resetLink);
 }
+
+// Event listeners
+document.getElementById('intro-form').addEventListener('submit', function (event) {
+    event.preventDefault(); // Prevent the form from submitting
+
+    // Validate required fields
+    if (!validateForm()) {
+        alert('Please fill in all required fields.');
+        return;
+    }
+
+    // Gather form data and display it
+    displayFormData();
+
+    // Clear the form
+    this.reset();
+});
+
+document.getElementById('add-course-btn').addEventListener('click', addCourse);
