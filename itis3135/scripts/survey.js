@@ -58,7 +58,7 @@ function displayFormData() {
         <p><strong>Primary Computer Platform:</strong> ${document.getElementById('computer-platform').value}</p>
         <p><strong>Courses Currently Taking:</strong></p>
         <ul>
-            ${Array.from(document.querySelectorAll('.course-entry')).map(input => `<li>${input.value}</li>`).join('')}
+            ${Array.from(document.querySelectorAll('.course-entry')).map((input) => `<li>${input.value}</li>`).join('')}
         </ul>
         <p><strong>Funny Thing About Yourself:</strong> ${document.getElementById('funny-thing').value}</p>
         <p><strong>Anything Else:</strong> ${document.getElementById('additional-info').value}</p>
