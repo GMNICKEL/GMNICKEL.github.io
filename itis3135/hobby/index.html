@@ -18,6 +18,10 @@
             color: rgb(226, 183, 226);
         }
 
+        a:visited {
+            color: #ffffff;
+        }
+
         .center {
             margin: 0 auto;
             text-align: center;
@@ -212,7 +216,7 @@
     <script>
         function showSection(sectionId) {
             const sections = document.querySelectorAll('.section');
-            sections.forEach(function (section) { 
+            sections.forEach(function (section) {
                 section.style.display = 'none';
             });
             const activeSection = document.getElementById(sectionId);
