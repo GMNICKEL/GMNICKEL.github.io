@@ -31,7 +31,7 @@
         ul {
             list-style-position: inside;
         }
-        
+
         li {
             text-align: left;
         }
@@ -212,37 +212,38 @@
     <script>
         function showSection(sectionId) {
             const sections = document.querySelectorAll('.section');
-            sections.forEach(section => {
+            sections.forEach(function (section) { 
                 section.style.display = 'none';
             });
             const activeSection = document.getElementById(sectionId);
             activeSection.style.display = 'block';
         }
-        document.getElementById('about-me-link').addEventListener('click', function() {
+
+        document.getElementById('about-me-link').addEventListener('click', function () {
             showSection('about-me');
         });
 
-        document.getElementById('home-link').addEventListener('click', function() {
+        document.getElementById('home-link').addEventListener('click', function () {
             showSection('home');
         });
 
-        document.getElementById('seasons-link').addEventListener('click', function() {
+        document.getElementById('seasons-link').addEventListener('click', function () {
             showSection('seasons');
         });
 
-        document.getElementById('best-location-link').addEventListener('click', function() {
+        document.getElementById('best-location-link').addEventListener('click', function () {
             showSection('best-location');
         });
 
-        document.getElementById('how-to-enter-link').addEventListener('click', function() {
+        document.getElementById('how-to-enter-link').addEventListener('click', function () {
             showSection('how-to-enter');
         });
 
-        document.getElementById('why-hobby-link').addEventListener('click', function() {
+        document.getElementById('why-hobby-link').addEventListener('click', function () {
             showSection('why-hobby');
         });
 
-        document.getElementById('prompts-link').addEventListener('click', function() {
+        document.getElementById('prompts-link').addEventListener('click', function () {
             showSection('prompts');
         });
 
