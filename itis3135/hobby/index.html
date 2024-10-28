@@ -53,17 +53,17 @@
 
     <nav class="navbar">
         <a href="#" id="about-me-link">About Me</a>
-        <span style="margin: 0 5px;">||</span>
+        <span>||</span>
         <a href="#" id="home-link">Home</a>
-        <span style="margin: 0 5px;">||</span>
+        <span>||</span>
         <a href="#" id="seasons-link">Seasons</a>
-        <span style="margin: 0 5px;">||</span>
+        <span>||</span>
         <a href="#" id="best-location-link">Best Location</a>
-        <span style="margin: 0 5px;">||</span>
+        <span>||</span>
         <a href="#" id="how-to-enter-link">How to Enter the Hobby</a>
-        <span style="margin: 0 5px;">||</span>
+        <span>||</span>
         <a href="#" id="why-hobby-link">Why is this my hobby</a>
-        <span style="margin: 0 5px;">||</span>
+        <span>||</span>
         <a href="#" id="prompts-link">AI Prompts</a>
     </nav>
 
@@ -211,17 +211,13 @@
     <script src="../scripts/HTMLInclude.min.js"></script>
     <script>
         function showSection(sectionId) {
-            // Hide all sections
             const sections = document.querySelectorAll('.section');
             sections.forEach(section => {
-                section.style.display = 'none'; // Hide each section
+                section.style.display = 'none';
             });
-            // Show the selected section
             const activeSection = document.getElementById(sectionId);
-            activeSection.style.display = 'block'; // Show the selected section
+            activeSection.style.display = 'block';
         }
-
-        // Event listeners for navigation links
         document.getElementById('about-me-link').addEventListener('click', function() {
             showSection('about-me');
         });
@@ -250,7 +246,6 @@
             showSection('prompts');
         });
 
-        // Show the 'home' section by default
         showSection('home');
     </script>
 </body>
