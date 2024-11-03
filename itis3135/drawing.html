@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/default.css">
+    <title>Grayson Nickel Ghastly Newt || ITIS 3135 Drawing</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="center-page">
+    <header class="center">
+        <div data-include="components/header.html"></div>
+    </header>
+
+    <main class="center">
+        <h2>Drawing</h2>
+        <p>Click and drag to move the cube around.</p>
+    </main>
+
+    <footer class="center">
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.8.0/lib/p5.js"></script>
+    <script src="scripts/sketch.js"></script>
+    <script src="https://unpkg.com/p5.easycam/p5.easycam.min.js"></script>
+    <script>
+        let easycam;
+      
+        function setup() {
+          createCanvas(400, 400, WEBGL);
+          
+          easycam = createEasyCam();
+          
+          easycam.setDistance(200);
+        }
+      
+        function draw() {
+          background(200);
+          
+          noStroke();
+          fill(150, 100, 250);
+          box(100);
+        }
+      </script>
+</body>
+
+</html>
