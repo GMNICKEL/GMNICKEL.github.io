@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/default.css">
+    <title>Grayson Nickel Ghastly Newt || ITIS 3135 Client Project Design</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="center-page">
+    <header class="center">
+        <div data-include="components/header.html"></div>
+    </header>
+
+    <main class="center">
+        <h2>Project Overview</h2>
+
+        <h3>Application and its purpose:</h3>
+        <p>This website will essentially be a work portfolio for the client. The website will show off the different work related projects the client was involved with. Additionally, this website will include the client's resume and a contact form if the user is looking to contract a construction company for a job.</p>
+
+        <h3>Intended users of the website:</h3>
+        <p>The intended users are the client, the clients’ higher ups, and potential hiring agents looking for work experience, resume, etc on the client. 
+        </p>
+
+        <h3>Overview of the content:</h3>
+        <p>The first page, Home Page, Will include basic information on the owner/client. Picture, name, email, etc. The next page, Projects, will be a scrollable vertical list of the clients' different projects, seeing as how this website will essentially be a portfolio. The list will be formatted as each listing having a small image that will have a small javascript function to “animate” the image when hovering over it. There will also be basic information on each individual project. The next page, (individual project pages), will have enlarged photos, more photos of the project and detailed information about the project and the clients’ participation in said project. The next page, Resume Page, will include the clients resume. Finally, the Contact Page, will include a contact form for the user to fill out if they are interested in contracting the construction of a commercial building through Liles construction company. 
+        </p>
+
+        <h3>Client Information:</h3>
+        <p>Name - David Nickel</p>
+        <p>Associated Business - Liles Construction</p>
+        <p>Valid Email - david.nickel415@gmail.com
+        </p>
+        <p>Phone Number - [Redacted]</p>
+
+        <h3>Wireframe:</h3>
+        <img src="images/wireframe.jpg" alt="Project Wireframe" class="center">
+        <p><i>Client Project Wireframe</i></p>
+
+        <h3>Site Map:</h3>
+        <img src="images/sitemap.jpg" alt="Client Project Site Map" class="center">
+        <p><i>Client Project Site Map</i></p>
+
+        <hr>
+        <h3>Pages:</h3>
+        <ul>
+            <p><strong>Home Page</strong></p>
+            <li>Name - index.html</li>
+            <li>Purpose - Introduce client</li>
+            <li>Audience/Users - Client, clients’ higher ups, and potential hiring agents.</li>
+            <li>Content - Image of client, name, email, additional information about client specifically.</li>
+            <li>Input Data - This page will NOT ask users to input data.</li>
+            <li>Input Validation - NO input data.</li>
+            <li>Button/Hyperlinks/Dropdowns - Hyperlinks will be included at the top for navigation. NO buttons, NO dropdowns.</li>
+            <li>Actions - The only interaction on this page will be hyperlinks at the top for navigation.</li>
+            <li>Specific Notes - None.</li>
+        </ul>
+
+        <ul>
+            <p><strong>Projects Page</strong></p>
+            <li>Name - projects.html</li>
+            <li>Purpose - Provide a list of clients’ projects</li>
+            <li>Audience/Users - Client, clients’ higher ups, and potential hiring agents.</li>
+            <li>Content - For each project there will be an image, project name, basic project information.</li>
+            <li>Input Data - This page will NOT ask users to input data.</li>
+            <li>Input Validation - NO input data.</li>
+            <li>Button/Hyperlinks/Dropdowns - Hyperlinks will be included at the top for navigation. Each project section will essentially be a clickable button. NO dropdowns.</li>
+            <li>Actions - There will be hyperlinks at the top for navigation and each project is clickable and will navigate the user to a different page. This page includes java script interaction in the form of hovering over each image to zoom in.</li>
+            <li>Specific Notes - None.</li>
+        </ul>
+
+        <ul>
+            <p><strong>Individual Project Pages 
+                (3 in total, more can be added in the future per the client's request)
+                </strong></p>
+            <li>Name - projectname.html</li>
+            <li>Purpose - Provide additional information & pictures for the specified project.</li>
+            <li>Audience/Users - Client, clients’ higher ups, and potential hiring agents.</li>
+            <li>Content - Large images of project, detailed information on project and clients’ roll in said project.</li>
+            <li>Input Data - This page will NOT ask users to input data.</li>
+            <li>Input Validation - NO input data.</li>
+            <li>Button/Hyperlinks/Dropdowns - Hyperlinks will be included at the top for navigation. NO buttons, NO dropdowns.</li>
+            <li>Actions - The only interaction on this page will be hyperlinks at the top for navigation.</li>
+            <li>Specific Notes - None.</li>
+        </ul>
+            
+        <ul>
+            <p><strong>Resume Page</strong></p>
+            <li>Name - resume.html</li>
+            <li>Purpose - Show off clients work experience.</li>
+            <li>Audience/Users - Client, clients’ higher ups, and potential hiring agents.</li>
+            <li>Content - Clients’ detailed resume including their work experience.</li>
+            <li>Input Data - This page will NOT ask users to input data.</li>
+            <li>Input Validation - NO input data.</li>
+            <li>Button/Hyperlinks/Dropdowns - Hyperlinks will be included at the top for navigation. NO buttons, NO dropdowns.</li>
+            <li>Actions - The only interaction on this page will be hyperlinks at the top for navigation.</li>
+            <li>Specific Notes - None.</li>
+        </ul>
+
+        <ul>
+            <p><strong>Contact Page</strong></p>
+            <li>Name - contact_form.html</li>
+            <li>Purpose - Collect user information</li>
+            <li>Audience/Users - Client, clients’ higher ups, and potential hiring agents.</li>
+            <li>Content - Interactable form for the user to fill out and submit if they are interested in contracting Liles Construction.</li>
+            <li>Input Data - This page will allow the user to input information including name, email, company if applicable, and a text input box to explain their reason for contact.</li>
+            <li>Input Validation - The listed fields are required: name, email, and text input of at least 50 characters.</li>
+            <li>Button/Hyperlinks/Dropdowns - Hyperlinks will be included at the top for navigation. Submit button at bottom of form. NO dropdowns.</li>
+            <li>Actions - There will be hyperlinks at the top for navigation, text fields for name, email, company, and explanation, and a submit button.</li>
+            <li>Specific Notes - None.</li>
+        </ul>
+        <hr>
+        <h3>Dynamic Functionality on the website:</h3>
+        <p>For my java script functionality I went for more quality of life rather than core functionality as this website didn’t really need javascript to function. In the “Projects” page, there is a scrollable list of my clients' different projects that they have done. Originally, you just had to click the tiny name which is a link and that would redirect you to another page. However, I thought that was a bit dull and there are plenty of websites where upon clicking the image of something, you would also be redirected somewhere. So I made the images clickable links. But they didn’t look clickable, So that is where the javascript came in. I added an event listener of when the user hovers/unhovers their mouse over the image, and in turn the image will pop up and become a little larger until they move their mouse away. This makes sure that the user will know that the images are interactable and clickable. I drew my inspiration for clickable images from places like amazon. As for the small animations if you will, I drew my inspiration from places like youtube where some sort of interaction happens when you hover over a video thumbnail, making it clear that you can click it. In Youtube’s case, it starts to play the beginning of the video. Obviously, my site does not have videos so there is no autoplay. Just a mini zoom function. It turned out pretty well.</p>
+
+        <h3>Links:</h3>
+        <a href="https://www.amazon.com/s?k=rc+car&crid=1B9NE0MCC1ZIJ&sprefix=rc+ca%2Caps%2C89&ref=nb_sb_noss_2" alt="Amazon.com">Amazon.com</a>
+        <a href="https://www.youtube.com/results?search_query=rc+rock+crawler" alt="Youtube.com">Youtube.com</a>
+        <a href="https://drive.google.com/file/d/1kWlv5vZc-WxrANJuGBlymV_wZeEFtvPK/view?usp=sharing" alt="Draw.io">Draw.io</a>
+        <a href="https://docs.google.com/document/d/1KMG7-CRQVwsOKMpqH54wqdWmYx-MbROmXPsa8wYlBHA/edit?usp=sharing" alt="Google DOcs">Google Docs</a>
+    </main>
+
+    <footer class="center">
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+
+</html>
