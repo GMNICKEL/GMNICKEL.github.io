@@ -3,6 +3,14 @@ fetch("nav_main.json")
         return response.json();
     })
     .then(function(data) {
+        const header = document.querySelector("header");
+
+        // Add the H1 element dynamically at the very top
+        const heading = document.createElement("h1");
+        heading.textContent = "Grayson Nickel Ghastly Newt || ITIS-3135";
+        header.prepend(heading); // Add H1 first
+
+        // Create the navigation menu
         const navContainer = document.createElement("nav");
         navContainer.classList.add("center");
         data.forEach(function(item, index) {
@@ -23,7 +31,9 @@ fetch("nav_main.json")
                 }
             }
         });
-        document.querySelector("header").appendChild(navContainer);
+
+        // Insert the navigation menu right after the H1
+        header.insertBefore(navContainer, header.firstChild.nextSibling);
     })
     .catch(function(error) {
         console.error("Error loading navigation:", error);
@@ -42,6 +52,7 @@ fetch("nav_footer.json")
             link.textContent = item.name;
             footerContainer.appendChild(link);
         });
+
         const designedBy = document.createElement("p");
         designedBy.innerHTML = `
             Page Designed by 
@@ -55,4 +66,6 @@ fetch("nav_footer.json")
     .catch(function(error) {
         console.error("Error loading footer links:", error);
     });
+
+
 
