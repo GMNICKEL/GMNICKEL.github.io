@@ -247,6 +247,18 @@ form label {
     margin: 0 auto;
 }
 
+.nav-separator {
+    margin: 10px 0;
+    height: 1px;
+    background-color: rgb(72, 33, 16);
+    width: 100%;
+}
+
+footer a {
+    margin-right: 5px; /* Adds spacing between links */
+    display: inline-block; /* Ensures spacing applies correctly */
+}
+
 
 
 

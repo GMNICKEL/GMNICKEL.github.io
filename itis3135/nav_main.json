@@ -1,0 +1,21 @@
+
+[
+    {"name": "Home", "url": "../itis3135/index.html"},
+    {"name": "Introduction", "url": "introduction.html"},
+    {"name": "Contract", "url": "Contract.html"},
+    {"name": "Company", "url": "about.html"},
+    {"name": "Website Evaluations", "url": "website_evaluations.html"},
+    {"name": "HTML Tables", "url": "tables.html"},
+    {"name": "HTML Form", "url": "forms.html"},
+    {"name": "Client Project Overview", "url": "client_design.html"},
+    {"name": "First Scripts", "url": "firstscripts.html"},
+    {"name": "BYO Intro", "url": "byo_intro.html"},
+    {"name": "Drawing", "url": "drawing.html"},
+    {"isSeparator": true},
+    {"name": "Back to Main Site", "url": "../index.html"},
+    {"name": "Client Project Part 1", "url": "project/client_project_1/index.html"},
+    {"name": "Crappy Webpage", "url": "stuff/STUPID! WEBPAGE.htm"},
+    {"name": "Hobby", "url": "hobby/index.html"}
+]
+
+
