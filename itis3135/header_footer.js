@@ -1,23 +1,21 @@
 fetch("nav_main.json")
-    .then(response => response.json())
-    .then(data => {
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function(data) {
         const navContainer = document.createElement("nav");
         navContainer.classList.add("center");
-
-        data.forEach((item, index) => {
+        data.forEach(function(item, index) {
             if (item.isSeparator) {
-                // Add a visual separator
                 const separator = document.createElement("div");
                 separator.classList.add("nav-separator");
                 navContainer.appendChild(separator);
             } else {
-                // Create a normal menu link
                 const link = document.createElement("a");
                 link.href = item.url;
                 link.textContent = item.name;
                 navContainer.appendChild(link);
 
-                // Add separator only if this is not the last link
                 if (index < data.length - 1 && !data[index + 1].isSeparator) {
                     const spacer = document.createElement("span");
                     spacer.textContent = " | ";
@@ -25,29 +23,25 @@ fetch("nav_main.json")
                 }
             }
         });
-
         document.querySelector("header").appendChild(navContainer);
     })
-    .catch(error => console.error("Error loading navigation:", error));
-
-
-
+    .catch(function(error) {
+        console.error("Error loading navigation:", error);
+    });
 
 fetch("nav_footer.json")
-    .then(response => {
+    .then(function(response) {
         if (!response.ok) throw new Error("Footer JSON not found");
         return response.json();
     })
-    .then(data => {
+    .then(function(data) {
         const footerContainer = document.querySelector("footer");
-
-        data.forEach(item => {
+        data.forEach(function(item) {
             const link = document.createElement("a");
             link.href = item.url;
             link.textContent = item.name;
             footerContainer.appendChild(link);
         });
-
         const designedBy = document.createElement("p");
         designedBy.innerHTML = `
             Page Designed by 
@@ -58,4 +52,7 @@ fetch("nav_footer.json")
         `;
         footerContainer.appendChild(designedBy);
     })
-    .catch(error => console.error("Error loading footer links:", error));
+    .catch(function(error) {
+        console.error("Error loading footer links:", error);
+    });
+
