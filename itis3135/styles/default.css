@@ -112,9 +112,9 @@ td {
     text-align: left;
 }
 
-ol {
+/* ol {
     margin-left: -50px;
-}
+} */
 
 .push-left {
     margin-left: -50px;
@@ -258,6 +258,8 @@ footer a {
     margin-right: 5px; /* Adds spacing between links */
     display: inline-block; /* Ensures spacing applies correctly */
 }
+
+
 
 
 

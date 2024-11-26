@@ -11,6 +11,8 @@
     {"name": "First Scripts", "url": "firstscripts.html"},
     {"name": "BYO Intro", "url": "byo_intro.html"},
     {"name": "Drawing", "url": "drawing.html"},
+    {"name": "Review1", "url": "review1.html"},
+    {"name": "Review2", "url": "review2.html"},
     {"isSeparator": true},
     {"name": "Back to Main Site", "url": "../index.html"},
     {"name": "Client Project Part 1", "url": "project/client_project_1/index.html"},
