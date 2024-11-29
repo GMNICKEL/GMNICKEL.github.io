@@ -37,27 +37,17 @@
                 <p>This project was to build a social club in the 7,500sf basement of Optimist Hall. The club provides a unique atmosphere to relax in Charlotte. The challenge was to build a unique Southwestern theme in an old textile mill.</p>
             </div>
         </section>
+        <button id="back-to-top" class="center">Back to Top</button>
+        <br>
+        
     </main>
 
     <footer class="center">
         <div data-include="../../components/client_project_footer.html"></div>
     </footer>
     
-    <script> // hover zoom function
-        const images = document.querySelectorAll('.flex-container img');
-    
-        images.forEach((img) => {
-          img.addEventListener('mouseover', () => {
-            img.style.transform = 'scale(1.1)'; // zoom
-          });
-    
-          img.addEventListener('mouseout', () => {
-            img.style.transform = 'scale(1)'; // unzoom
-          });
-        });
-    </script>
-    
     <script src="../../scripts/HTMLInclude.min.js"></script>
+    <script src="./scripts.js" defer></script>
 </body>
 
 </html>
